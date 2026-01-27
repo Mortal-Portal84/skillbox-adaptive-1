@@ -1,0 +1,109 @@
+.benefit {
+  border-top-left-radius: 180px;
+  border-top-right-radius: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 480px;
+  padding: 20px;
+  width: 360px;
+  background-size: cover;
+  border: 2px solid $color-white;
+
+  @include vp-1023 {
+    width: 300px;
+    min-height: 400px;
+  }
+
+  @include vp-767 {
+    width: 260px;
+    min-height: 350px;
+    margin: 0 auto;
+    padding: 16px;
+  }
+
+  &--round-all {
+    border-radius: 180px;
+  }
+
+  &--apartment {
+    background-image: url("../../images/image-apartment.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../images/image-apartment@2x.jpg");
+    }
+
+    @include vp-1023 {
+      align-self: start;
+    }
+  }
+
+  &--pond {
+    background-image: url("../../images/image-pond.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../images/image-pond@2x.jpg");
+    }
+
+    @include vp-767 {
+      width: 260px;
+    }
+  }
+
+  &--entrance {
+    background-image: url("../../images/image-view-entrance-building.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../images/image-view-entrance-building@2x.jpg");
+    }
+
+    @include vp-1023 {
+      align-self: start;
+    }
+
+    @include vp-767 {
+      display: none;
+    }
+  }
+
+  &__number {
+    margin: 0 0 16px;
+    font-size: 80px;
+    font-family: $ff-ardeco;
+    line-height: 60px;
+
+    @include vp-1023 {
+      font-weight: 400;
+      font-size: 60px;
+      line-height: 60px;
+    }
+
+    @include vp-767 {
+      margin: 0 0 6px;
+      font-weight: 400;
+      font-size: 56px;
+      line-height: 50px;
+    }
+  }
+
+  &__text {
+    margin: 0 0 24px;
+    font-size: 22px;
+    line-height: 24px;
+    text-transform: uppercase;
+    text-align: center;
+
+    @include vp-1023 {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 20px;
+    }
+
+    @include vp-767 {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 18px;
+    }
+  }
+}

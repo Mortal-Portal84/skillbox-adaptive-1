@@ -1,0 +1,24 @@
+.socials {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 36px 72px;
+  max-width: 306px;
+  padding: 0;
+  list-style-type: none;
+
+  @include vp-1023 {
+    gap: 36px 60px;
+    margin: 0 0 41px;
+  }
+
+  @include vp-767 {
+    gap: 36px 32px;
+    margin: 0 0 27px;
+  }
+
+  &__link {
+    display: flex;
+    color: $color-white-20;
+  }
+}
