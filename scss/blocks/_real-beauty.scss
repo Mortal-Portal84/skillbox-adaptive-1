@@ -105,4 +105,17 @@
       margin: 25px 0 0;
     }
   }
+
+  &--signatured &__img-wrapper {
+    position: relative;
+  }
+
+  &--signatured &__img-wrapper::before {
+    display: none;
+  }
+
+  &--signatured &__image {
+    margin: 0;
+    height: unset;
+  }
 }
