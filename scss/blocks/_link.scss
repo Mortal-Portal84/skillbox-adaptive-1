@@ -1,0 +1,36 @@
+.link {
+  color: $color-white;
+  text-decoration: none;
+  outline: none;
+  transition: color 0.3s ease;
+
+  svg {
+    transition: color 0.3s ease;
+  }
+
+  &:hover, &:focus, &:focus-visible {
+    color: $color-white-50;
+
+    svg {
+      color: $color-white-50;
+    }
+  }
+
+  &--semitransparent {
+    color: $color-white-50;
+    transition: color 0.3s ease;
+    outline: none;
+
+    svg {
+      transition: color 0.3s ease;
+    }
+
+    &:hover, &:focus, &:focus-visible {
+      color: $color-white;
+
+      svg {
+        color: $color-white;
+      }
+    }
+  }
+}

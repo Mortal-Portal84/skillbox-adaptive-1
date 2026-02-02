@@ -497,6 +497,7 @@ a {
   font-size: 18px;
   line-height: 24px;
   text-transform: uppercase;
+  user-select: none;
 }
 @media (max-width: 1023px) {
   .header__text {
@@ -512,15 +513,6 @@ a {
 }
 .header__btn {
   margin: 0 20px 0 0;
-  padding: 10px 18px;
-  font-size: 13px;
-  font-family: inherit;
-  line-height: 16px;
-  color: inherit;
-  background-color: transparent;
-  border: 2px solid #ffffff;
-  border-radius: 60px;
-  cursor: pointer;
 }
 @media (max-width: 1023px) {
   .header__btn {
@@ -560,6 +552,24 @@ a {
   .header__phone-icon {
     display: flex;
   }
+}
+
+.button {
+  padding: 10px 18px;
+  font-size: 13px;
+  font-family: inherit;
+  line-height: 16px;
+  color: inherit;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 60px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  outline: none;
+}
+.button:hover, .button:focus {
+  background-color: #ffffff;
+  color: #2a52a3;
 }
 
 .hero {
@@ -742,6 +752,36 @@ a {
     font-size: 14px;
     line-height: 20px;
   }
+}
+
+.link {
+  color: #ffffff;
+  text-decoration: none;
+  outline: none;
+  transition: color 0.3s ease;
+}
+.link svg {
+  transition: color 0.3s ease;
+}
+.link:hover, .link:focus, .link:focus-visible {
+  color: rgba(255, 255, 255, 0.5);
+}
+.link:hover svg, .link:focus svg, .link:focus-visible svg {
+  color: rgba(255, 255, 255, 0.5);
+}
+.link--semitransparent {
+  color: rgba(255, 255, 255, 0.5);
+  transition: color 0.3s ease;
+  outline: none;
+}
+.link--semitransparent svg {
+  transition: color 0.3s ease;
+}
+.link--semitransparent:hover, .link--semitransparent:focus, .link--semitransparent:focus-visible {
+  color: #ffffff;
+}
+.link--semitransparent:hover svg, .link--semitransparent:focus svg, .link--semitransparent:focus-visible svg {
+  color: #ffffff;
 }
 
 .apartments {
@@ -1707,9 +1747,11 @@ a {
 .footer__inner-link {
   display: flex;
   justify-content: center;
+  color: rgba(255, 255, 255, 0.2);
 }
 .footer__company-link {
   justify-self: end;
+  color: rgba(255, 255, 255, 0.2);
 }
 @media (max-width: 1023px) {
   .footer__company-link {
