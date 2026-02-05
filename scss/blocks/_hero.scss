@@ -87,7 +87,7 @@
     }
   }
 
-  .hero__text-wrapper {
+  &__text-wrapper {
     display: grid;
     grid-template-columns: 360px 420px;
     justify-content: space-between;
@@ -103,7 +103,7 @@
     }
   }
 
-  .hero__text {
+  &__text {
     margin: 0;
     font-weight: 400;
     font-size: 20px;

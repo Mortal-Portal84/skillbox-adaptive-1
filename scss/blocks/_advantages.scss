@@ -114,6 +114,25 @@
       line-height: 18px;
       text-align: center;
     }
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: -95px;
+      width: 80px;
+      height: 56px;
+      background-image: url("../../images/sprite/icon-arrow.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 80px 56px;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      cursor: pointer;
+    }
+
+    &:hover::after {
+      opacity: 1;
+    }
   }
 
   &--link--active {
